@@ -1,4 +1,4 @@
-# Auto-Screen-Record-QuickTime
+# auto-screen-record-quicktime
 AppleScript for timed screen recording.
 
 ## Demo
