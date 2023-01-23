@@ -4,8 +4,8 @@
 	AppleScript to record the screen at a specified time
 	Simultaneous playback of video files launched by QickTimePlayer and screen recording.
 
- SupportVersion:
-	macOS Monterey(version 12.4)
+ Verified Version:
+	macOS Monterey(version 12.6)
 	QuickTime Player(version 10.5)
 
  Usage:
@@ -21,10 +21,9 @@
 		Set the recording time to a value larger than the desired recording time.
 		
  reference:
-	1.AppleScript sample code / AppleScript のサンプルコード
+	1. AppleScript sample code
 	https://dev.classmethod.jp/articles/applescript-sample/
-	2.QuickTime Player to head all open movies and play them at the same time / 
-	QuickTime Playerでオープン中の全ムービーを頭出しして同時再生
+	2. QuickTime Player to head all open movies and play them at the same time
 	http://piyocast.com/as/archives/tag/quicktime-player
 ********************************************************)
 

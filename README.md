@@ -28,7 +28,7 @@ In System Preferences, go to Security and Privacy > Privacy > Accessibility > Al
 
 ## Note
 #### Verified Version
-macOS Monterey(version 12.4)
+macOS Monterey(version 12.6)
 ####  Input Record Time
 Recording time depends on the process, so there will be a time gap of a few seconds to a few tens of seconds.
 Please set the recording time to a value larger than the desired recording time.

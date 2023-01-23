@@ -4,9 +4,9 @@
 	AppleScript to record the screen at a specified time
 	Simultaneous playback of video files launched by QickTimePlayer and screen recording.
 
- SupportVersion:
+ Verified Version:
 	macOS Monterey 
-	version 12.4
+	version 12.6
 
  Usage:
 	1.QuickTime Player settings
@@ -22,13 +22,13 @@
 		Set the recording time to a value larger than the desired recording time.
 		 
  reference
-	1.JavaScript for Automation Release Notes
+	1. JavaScript for Automation Release Notes
 	https://developer.apple.com/library/archive/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/Articles/Introduction.html#//apple_ref/doc/uid/TP40014508-CH111-SW1
-	2.Mac : JavaScript for Automation (JXA) —á•¶Ž«“T
+	2. Mac : JavaScript for Automation (JXA) Example Dictionary
 	http://www.openspc2.org/reibun/JXA/Yosemite/
-	3.JavaScript for Automation (JXA)
+	3. JavaScript for Automation (JXA)
 	http://tonbi.jp/AppleScript/JavaScript/
-	4.JavaScript for Automation Cookbook
+	4. JavaScript for Automation Cookbook
 	https://github.com/JXA-Cookbook/JXA-Cookbook/wiki/
 ********************************************************/
 
