@@ -5,7 +5,7 @@
 	Simultaneous playback of video files launched by QickTimePlayer and screen recording.
 
  Verified Version:
-	macOS Monterey(version 12.6)
+	macOS Ventura(version 13.4.1)
 	QuickTime Player(version 10.5)
 
  Usage:

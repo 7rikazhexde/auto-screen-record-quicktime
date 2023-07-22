@@ -4,7 +4,7 @@
 	AppleScript to record the screen at a specified time
 
  Verified Version:
-	macOS Monterey(version 12.6)
+	macOS Ventura(version 13.4.1)
 	QuickTime Player(version 10.5)
 
  Usage:
@@ -57,7 +57,7 @@ on ask_recording_time()
 		
 	end repeat
 	log "[ask_recording_time()]Recording time" & recording_time & "sec"
-	return recording_time
+	return recording_time * 60
 end ask_recording_time
 
 (********************************************************
@@ -118,6 +118,23 @@ on quit_quicktimeplayer()
 	end tell
 end quit_quicktimeplayer
 
+(******************************************************** 
+ Function Name:
+	stop_googlechrome():
+	Function to stop Google Chrome processes
+ Arguments:
+	None
+ Return value:
+	None
+ Note:
+	Use kill -9 with caution, as it kills the process and may result in the loss of any work being performed.
+	When executing commands in the terminal, be careful not to accidentally kill other important processes.
+	Please work with extreme caution.
+********************************************************)
+on stop_googlechrome()
+	do shell script "kill -9 $(pgrep 'Google Chrome')"
+end quit_quicktimeplayer
+
 (********************************************************
  Function Name:
 	main():
@@ -127,7 +144,6 @@ end quit_quicktimeplayer
  Return value:
 	None
  Description:
- ê‡ñæ:
 	Record for a specified time with QuickTime Player (start to stop)
 	After the specified time has elapsed, recording is completed and QuickTime Player exits to display dialog
 ********************************************************)
@@ -136,7 +152,7 @@ on main()
 	if input_num is greater than 0 then
 		screen_recording(input_num)
 		quit_quicktimeplayer()
-		(display dialog "Screen recording is complete. Quit script." buttons {"Cancel", "OK"} default button "OK")
+		-- stop_googlechrome()
 	else
 		(display dialog "Please enter a positive integer for the elapsed time.Quit script." buttons {"Cancel", "OK"} default button "OK")
 	end if

@@ -4,7 +4,7 @@
 	JavaScript for Automation(JXA) to record the screen at a specified time
 
  Verified Version:
-	macOS Monterey(version 12.6)
+	macOS Ventura(version 13.4.1)
 	QuickTime Player(version 10.5)
 
  Usage:
@@ -175,6 +175,25 @@ function quit_quicktimeplayer(){
 
 /******************************************************** 
  Function Name:
+	stop_googlechrome():
+	Function to stop Google Chrome processes
+ Arguments:
+	None
+ Return value:
+	None
+ Note:
+	Use kill -9 with caution, as it kills the process and may result in the loss of any work being performed.
+	When executing commands in the terminal, be careful not to accidentally kill other important processes.
+	Please work with extreme caution.
+********************************************************/
+function stop_googlechrome() {
+  var app = Application.currentApplication();
+  app.includeStandardAdditions = true;
+  app.doShellScript("kill -9 $(pgrep 'Google Chrome')");
+}
+
+/******************************************************** 
+ Function Name:
 	main():
 	main function that executes screen recording with QuickTime Player
  Arguments:
@@ -197,6 +216,7 @@ function main(){
 		screen_recording(input_num);
 		quit_quicktimeplayer();
 		app.displayAlert('Screen recording is complete. Quit script.');
+		//stop_googlechrome()
 		console.log('[main()]Script end')
 	}
 	else{
